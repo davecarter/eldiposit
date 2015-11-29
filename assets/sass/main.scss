@@ -54,7 +54,7 @@
 	html {
 		background-color:		_palette(accent2, bg);
 		background-attachment:	fixed,						fixed;
-		background-image:		url('images/overlay.png'),	url('../../images/bg-eldiposit.jpg');
+		background-image:		url('images/overlay.png'),	url('../../images/bg-home.jpg');
 		background-position:	top left,					center center;
 		background-repeat:		repeat,						none;
 		background-size:		auto,						cover;
@@ -116,7 +116,15 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+
+		&.discount-sub {
+			font-size: 2.5em;
+			letter-spacing: 0;
+			margin: 0;
+			text-shadow: #000 0px 5px 10px;
+		}
 	}
+
 
 	h1, h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
@@ -1020,6 +1028,12 @@
 			display: none;
 		}
 
+		.subcontainer {
+			position: relative;
+    	left: 50%;
+    	width: 47%;
+		}
+
 		.container {
 			@include padding($size-padding-tb, $size-padding-lr, (0, 0, 5em, 0));
 			background: transparentize(_palette(bg), 0.05);
@@ -1074,6 +1088,13 @@
 		position: relative;
 		text-align: center;
 
+		.subcontainer {
+			position: relative;
+    	left: 50%;
+    	width: 47%;
+    	top: 86.5%;
+		}
+
 		&:after {
 			content: '';
 			display: inline-block;
@@ -1110,8 +1131,24 @@
 					margin-top: 0;
 				}
 
+				&.coworking {
+					margin-top: -40px;
+				}
+			}
+
+			h2 {
+				font-size: 5em;
+				letter-spacing: -5px;
+				line-height: 1.25em;
+				margin: 0;
+				text-shadow: #000 0px 5px 10px;
+
+				&:after {
+					margin-top: 0;
+				}
+
 				&.discount {
-					font-size: 12em;
+					font-size: 8em;
 					line-height: 1;
 					font-family: 'Open Sans', sans-serif;
 
@@ -1126,16 +1163,20 @@
 				color: _palette(alt, fg-bold);
 				font-weight: _font(weight-bold);
 				margin: 10px 0 0 0;
+
+				&.dreamers {
+					margin-bottom: 3em;
+					font-size: 1.8em;
+					text-shadow: #000 0px 5px 10px;
+				}
 			}
 		}
 
 		.container {
 			background: transparentize(_palette(bg), 0.05);
 			bottom: 0;
-			left: 50%;
-			margin-left: -17.5em;
+			right: 0;
 			padding: $size-padding-lr;
-			position: absolute;
 
 			> :last-child {
 				margin-bottom: 0;

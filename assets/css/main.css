@@ -1009,7 +1009,7 @@ body {
 html {
   background-color: #313a3d;
   background-attachment: fixed,						fixed;
-  background-image: url("images/overlay.png"), url("../../images/bg-eldiposit.jpg");
+  background-image: url("images/overlay.png"), url("../../images/bg-home.jpg");
   background-position: top left,					center center;
   background-repeat: repeat,						none;
   background-size: auto,						cover; }
@@ -1062,6 +1062,11 @@ em, i {
 
 p {
   margin: 0 0 2em 0; }
+  p.discount-sub {
+    font-size: 2.5em;
+    letter-spacing: 0;
+    margin: 0;
+    text-shadow: #000 0px 5px 10px; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #61686b;
@@ -1963,6 +1968,10 @@ button,
   position: relative; }
   .main .image.primary {
     display: none; }
+  .main .subcontainer {
+    position: relative;
+    left: 50%;
+    width: 47%; }
   .main .container {
     padding: 5em 2.5em 8em 2.5em ;
     background: rgba(255, 255, 255, 0.95);
@@ -2008,6 +2017,11 @@ button,
   height: 100vh;
   position: relative;
   text-align: center; }
+  #header .subcontainer {
+    position: relative;
+    left: 50%;
+    width: 47%;
+    top: 86.5%; }
   #header:after {
     content: '';
     display: inline-block;
@@ -2032,24 +2046,36 @@ button,
       text-shadow: #000 0px 5px 10px; }
       #header header h1:after {
         margin-top: 0; }
-      #header header h1.discount {
-        font-size: 12em;
+      #header header h1.coworking {
+        margin-top: -40px; }
+    #header header h2 {
+      font-size: 5em;
+      letter-spacing: -5px;
+      line-height: 1.25em;
+      margin: 0;
+      text-shadow: #000 0px 5px 10px; }
+      #header header h2:after {
+        margin-top: 0; }
+      #header header h2.discount {
+        font-size: 8em;
         line-height: 1;
         font-family: 'Open Sans', sans-serif; }
-        #header header h1.discount:after {
+        #header header h2.discount:after {
           content: '';
           height: 0; }
     #header header p {
       color: #ffffff;
       font-weight: 700;
       margin: 10px 0 0 0; }
+      #header header p.dreamers {
+        margin-bottom: 3em;
+        font-size: 1.8em;
+        text-shadow: #000 0px 5px 10px; }
   #header .container {
     background: rgba(255, 255, 255, 0.95);
     bottom: 0;
-    left: 50%;
-    margin-left: -17.5em;
-    padding: 2.5em;
-    position: absolute; }
+    right: 0;
+    padding: 2.5em; }
     #header .container > :last-child {
       margin-bottom: 0; }
     #header .container .button {
