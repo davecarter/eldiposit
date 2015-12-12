@@ -1289,6 +1289,11 @@
 					margin: 0 0 (_size(element-margin) * 2) 0;
 				}
 
+				.subcontainer {
+					left: 10%;
+					width: 80%;
+				}
+
 				.container {
 					@include padding($size-padding-tb, $size-padding-lr, (0, 0, 7em, 0));
 
@@ -1304,6 +1309,12 @@
 				header {
 					padding-bottom: (_size(element-height) + ($size-padding-lr * 2));
 					width: 80%;
+				}
+
+				.subcontainer {
+					left: 50%;
+			    width: 80%;
+			    top: 8%;
 				}
 
 				.container {
@@ -1347,6 +1358,11 @@
 		/* Main */
 
 			.main {
+
+				.subcontainer {
+					  top: -100px;
+				}
+			
 				.container {
 					@include padding($size-padding-tb, $size-padding-lr);
 
@@ -1376,8 +1392,17 @@
 						font-size: 2em;
 					}
 
+					h1.coworking {
+						margin-top: -10px;
+						letter-spacing: 0px;
+					}
+
 					p {
 						margin-top: 1em;
+					}
+
+					p.dreamers {
+						margin-bottom: 0;
 					}
 				}
 
@@ -1407,6 +1432,12 @@
 
 			html, body {
 				min-width: 320px;
+			}
+
+			.main {
+				.subcontainer {
+					  top: -100px;
+				}
 			}
 
 		/* List */

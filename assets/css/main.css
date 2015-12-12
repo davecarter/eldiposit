@@ -2140,6 +2140,9 @@ button,
   .main .image.primary {
     display: block;
     margin: 0 0 4em 0; }
+  .main .subcontainer {
+    left: 10%;
+    width: 80%; }
   .main .container {
     padding: 3em 3em 8em 3em ; }
     .main .container:before {
@@ -2149,6 +2152,10 @@ button,
   #header header {
     padding-bottom: 9em;
     width: 80%; }
+  #header .subcontainer {
+    left: 50%;
+    width: 80%;
+    top: 8%; }
   #header .container {
     margin-left: -40%;
     padding: 3em; }
@@ -2170,6 +2177,8 @@ button,
     font-size: 1.35em; }
 
   /* Main */
+  .main .subcontainer {
+    top: -100px; }
   .main .container {
     padding: 3em 1.5em 1em 1.5em ; }
     .main .container .image.primary:first-child {
@@ -2186,8 +2195,13 @@ button,
       padding-bottom: 0; }
       #header header h1 {
         font-size: 2em; }
+      #header header h1.coworking {
+        margin-top: -10px;
+        letter-spacing: 0px; }
       #header header p {
         margin-top: 1em; }
+      #header header p.dreamers {
+        margin-bottom: 0; }
     #header .container {
       display: none; }
 
@@ -2199,6 +2213,9 @@ button,
   /* Basic */
   html, body {
     min-width: 320px; }
+
+  .main .subcontainer {
+    top: -100px; }
 
   /* List */
   ul.actions {
