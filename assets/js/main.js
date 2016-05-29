@@ -52,7 +52,7 @@
 					$window.on('load.hl_scrolly', function() {
 
 						$('.scrolly').scrolly({
-							speed: 1500,
+							speed: 500,
 							parent: $wrapper,
 							pollOnce: true
 						});
@@ -69,7 +69,7 @@
 
 				// Scrolly.
 					$('.scrolly').scrolly({
-						speed: 1500
+						speed: 500
 					});
 
 			}
@@ -100,9 +100,9 @@
 							$headerTitle
 								.css('position', 'fixed')
 								.css('height', 'auto')
-								.css('top', '40%')
+								.css('top', '50%')
 								.css('left', '0')
-								.css('width', '100%')
+								.css('width', '50%')
 								.css('margin-top', ($headerTitle.outerHeight() / -2));
 
 						});
