@@ -2024,10 +2024,10 @@ button,
   position: relative;
   text-align: center; }
   #header .subcontainer {
-    position: relative;
+    position: absolute;
     left: 50%;
     width: 47%;
-    top: 86.5%; }
+    bottom: 0; }
   #header:after {
     content: '';
     display: inline-block;
@@ -2141,6 +2141,7 @@ button,
     display: block;
     margin: 0 0 4em 0; }
   .main .subcontainer {
+    top: 0;
     left: 10%;
     width: 80%; }
   .main .container {
@@ -2155,7 +2156,7 @@ button,
   #header .subcontainer {
     left: 50%;
     width: 80%;
-    top: 8%; }
+    bottom: 0; }
   #header .container {
     margin-left: -40%;
     padding: 3em; }
@@ -2178,7 +2179,7 @@ button,
 
   /* Main */
   .main .subcontainer {
-    top: -100px; }
+    top: 300px; }
   .main .container {
     padding: 3em 1.5em 1em 1.5em ; }
     .main .container .image.primary:first-child {
@@ -2198,6 +2199,8 @@ button,
       #header header h1.coworking {
         margin-top: -10px;
         letter-spacing: 0px; }
+      #header header h2.discount {
+        font-size: 6em; }
       #header header p {
         margin-top: 1em; }
       #header header p.dreamers {
@@ -2215,7 +2218,7 @@ button,
     min-width: 320px; }
 
   .main .subcontainer {
-    top: -100px; }
+    top: 80px; }
 
   /* List */
   ul.actions {
